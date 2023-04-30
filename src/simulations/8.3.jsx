@@ -45,10 +45,10 @@ function BarChart({ chartData, chatLabel }) {
     labels: chatLabel,
     datasets: [
       {
-        label: 'Sales',
+        label: 'Frequency',
         data: chartData,
-        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        backgroundColor: '#ebff00',
+        borderColor: '#000000',
         borderWidth: 1,
       },
     ],
@@ -68,10 +68,10 @@ function BarChart({ chartData, chatLabel }) {
 
 function Sim3() {
   const [times, setTimes] = useState(undefined);
-  const [number1, setNumber1] = useState(undefined);
-  const [number2, setNumber2] = useState(undefined);
-  const [number3, setNumber3] = useState(undefined);
-  const [number4, setNumber4] = useState(undefined);
+  const [number1, setNumber1] = useState(0);
+  const [number2, setNumber2] = useState(0);
+  const [number3, setNumber3] = useState(0);
+  const [number4, setNumber4] = useState(0);
   const [data, setData] = useState([]);
   const [label, setlLabel] = useState([]);
 
@@ -97,7 +97,6 @@ function Sim3() {
       acc.push(count);
       return acc;
     }, []);
-    console.log(count);
     setData(count);
     setlLabel(items);
   };
