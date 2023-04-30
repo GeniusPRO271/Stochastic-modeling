@@ -1,0 +1,19 @@
+.ball_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ball_answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: white;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  font-size: 25px;
+  height: 250px;
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+}
