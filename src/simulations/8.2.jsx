@@ -3,7 +3,7 @@ import './8.2.css';
 
 function Sim2() {
   const [random, setRandom] = useState(0);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(-1);
   const [answer, setAnswer] = useState('Ask a question');
   const [question, setQuestion] = useState('');
   const generateNumber = () => {
@@ -66,7 +66,12 @@ function Sim2() {
           <div
             className="ball_answer"
             style={{
-              backgroundColor: answer != 'Ask a question' && '#61ff00',
+              backgroundColor:
+                answer != 'Ask a question' && index >= 0
+                  ? index < 3
+                    ? '#61ff00'
+                    : 'red'
+                  : 'white',
               boxShadow: answer != 'Ask a question' && '2px 4px 1px #000000',
             }}
           >
