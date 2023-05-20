@@ -205,6 +205,7 @@ function Sim4() {
         <input
           className="randomNum_box_sim4"
           type="number"
+          placeholder="Times"
           step="10"
           min="0"
           max="1000"

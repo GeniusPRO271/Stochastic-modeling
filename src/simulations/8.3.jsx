@@ -133,6 +133,7 @@ function Sim3() {
           type="number"
           step="10"
           min="0"
+          placeholder="Times"
           max="1000"
           onChange={(event) => {
             setTimes(event.target.value);
